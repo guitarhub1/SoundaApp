@@ -1,0 +1,64 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+
+
+<h2>Choose Effekt</h2>
+<p></p>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Effekt</button>
+  <div id="myDropdown" class="dropdown-content">
+	<a data-effekt="Clean"      class="selector" >Clean</a>
+    <a data-effekt="FlangerBox" class="selector" >Flanger</a>
+    <a data-effekt="ChorusBox"  class="selector" >Chorous</a>
+    <a data-effekt="DelayBox"   class="selector" >Delay</a>
+  </div>
+</div>
+
+
+
+<div id="FlangerBox" class="Effekt">
+<br> Flanger: </br>
+<br> modifies Sound in the best wayy</br>
+<br> </br>
+Time:   <input type="text" id="field1"><br>
+Depth:  <input type="text" id="field2"><br>
+Rate:   <input type="text" id= "field3"><br>
+</div>
+
+<div id="ChorusBox" class="Effekt">
+<br> Chorus: </br>
+<br> Adds a choir to your sound</br>
+<br> </br>
+Time:   <input type="text" id="field1"><br>
+Depth:  <input type="text" id="field2"><br>
+Rate:   <input type="text" id= "field3"><br>
+</div>
+
+
+<div id="DelayBox" class="Effekt">
+<br> Delay: </br>
+<br> adds the Signal in repeativly again and again and than its fades outs</br>
+<br> </br>
+Time:   <input type="text" id="field1"><br>
+Depth:  <input type="text" id="field2"><br>
+Rate:   <input type="text" id= "field3"><br>
+</div>
+
+<br> </br>
+
+<button onclick="startEffekt()" class="Button" >Start Effekt</button>
+
+
+
+
+
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> Application for HSKarlsruhe</p>
+
+
+{% endblock %}
